@@ -54,11 +54,11 @@ public class Main {
 
 
         int age = 30;
-        double eurosInPocket = 11;
+        double eurosInPocket = 12;
         double eurosForEntry = 10;
 
         // Write your code here
-        if(shoeType=="fancy" && (eurosInPocket>=eurosForEntry && age>18)){
+        if(shoeType.equals("fancy") && (eurosInPocket>=eurosForEntry && age>18)){
             System.out.println("Come in");
         } else {
             System.out.println("Stay out");
