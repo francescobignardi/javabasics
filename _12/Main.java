@@ -39,7 +39,7 @@ public class Main {
         if(text.contains("a")){
             yourScore -=5;
         }
-        if(text==text.toLowerCase()){
+        if(text.equals(text.toLowerCase())){
             yourScore +=10;
         }
         if(yourScore>20){
@@ -72,7 +72,12 @@ public class Main {
             double yourMealScore = 0;
             // Start your code here
 
-            yourMealScore = 3 * weight;
+            if(mealType.equals("sandwich")){
+                yourMealScore = 5 * weight;
+            } else {
+                yourMealScore = 3 * weight;
+            }
+
             weight = 10;
             double minScore = 5;
 
