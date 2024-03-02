@@ -73,9 +73,10 @@ public class Main {
 
         for(Integer x : items){
             if(x > maxNumber) {
-                maxNumber = x;}
-            else if(x < minNumber) {
-                minNumber = x;}
+                maxNumber = x;
+            } else if(x < minNumber) {
+                minNumber = x;
+            }
         }
 
         System.out.println("The smallest item in the array is: " + minNumber);
